@@ -19,12 +19,16 @@
 # Q3-1. 분석 결과에 대한 미래 예측
 ## 1. SARIMA 예측 모델
 ![alt text](results/image-8.png)
+
 결과 : 실패
+
 ---
 ## 2. Prophet 예측 모델
 ![alt text](results/image-9.png)
 ![alt text](results/image-10.png)
+
 결과 : 평균적으로 ± 2,217.07 개의 프로젝트 수를 차이 나게 예측
+
 ---
 # Q4. Stack Overflow 질문 수와 GitHub 프로젝트 수 간 상관관계 분석
 ## 1. 분야별 상관관계 분석
