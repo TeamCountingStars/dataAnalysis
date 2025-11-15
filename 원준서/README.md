@@ -36,6 +36,7 @@
 ## 2. 언어별 상관관계 분석
 ![alt text](results/image-12.png)
 
+## 언어별 회귀 모델 학습 요약
 | Language | Model (Y = mX + b) | R-squared |
 | --- | --- | --- |
 | Python | Y = -0.38 * X + 11527.15 | 0.352442 |
