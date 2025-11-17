@@ -4,3 +4,4 @@ https://drive.google.com/file/d/1FbENciQlJTse7JeWKtpE2nKqNnD9Vc8e/view?usp=drive
 
 https://drive.google.com/file/d/1pzLPA0hda0wYsaeircOQlRWC1odvmpXi/view?usp=drive_link   //스택오버플로우 완성
 
+https://drive.google.com/file/d/1kWSq5dwslTKfQSGN0cUd_YkaJ8g606lP/view?usp=sharing      //스택오버플로우 raw데이터
