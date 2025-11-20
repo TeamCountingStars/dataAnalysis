@@ -49,7 +49,7 @@
 ---
 
 ### 2. LLM 분야 시계열 분해 분석
-![LLM 시계열 분해](resultsImage/image-7.png)
+![LLM 시계열 분해](resultsImage/image-7계 분석
 
 - **Trend (추세)**: 2023년계 분석
 ![언어별 상관관계](resultsImage/image-12.png)
