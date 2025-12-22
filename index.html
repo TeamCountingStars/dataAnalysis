@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT와 Vibe Coding 이후, 개발자 생태계는 어떻게 변했는가?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with logos -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Logo 1" class="logo">
+            <img src="images/logo2.png" alt="Logo 2" class="logo">
+            <img src="images/logo3.png" alt="Logo 3" class="logo">
+        </div>
+    </header>
+
+    <!-- Title Section -->
+    <section class="title-section">
+        <h1 class="main-title">ChatGPT와 Vibe Coding 이후, 개발자 생태계는 어떻게 변했는가?</h1>
+        <div class="authors">
+            <span class="author">윤태웅</span>
+            <span class="author">원준서</span>
+            <span class="author">송민찬</span>
+            <span class="author">이라온</span>
+        </div>
+        <div class="affiliation">
+            한양대학교 ERICA 스마트융합공학부 스마트ICT융합전공
+        </div>
+    </section>
+
+    <!-- Abstract Section -->
+    <section class="abstract-section">
+        <h2>Abstract</h2>
+        <p>
+            2022년 11월 ChatGPT 출시 이후 소프트웨어 개발 시장이 급격히 변화했습니다.
+            본 연구는 AI 코드 생성 도구가 개발 시장에 미친 영향을 GitHub와 Stack Overflow 데이터로 분석합니다.
+            GitHub 프로젝트 생성량, 언어별 사용 추세, AI 분야별 성장 패턴을 정량적으로 측정하고,
+            Stack Overflow 질문 수와의 상관관계를 통해 개발자 커뮤니티의 행동 변화를 파악합니다.
+            시계열 분석과 Prophet 예측 모델을 활용하여 ChatGPT 출시가 촉발한 패러다임 전환을 입증하고,
+            개발 환경의 미래를 전망합니다.
+        </p>
+    </section>
+
+    <!-- 3D Carousel Section -->
+    <section class="carousel-section">
+        <h2>연구 결과 시각화</h2>
+        <div class="carousel-container">
+            <div class="scene">
+                <div class="carousel" id="carousel">
+                    <!-- Images will be added dynamically by JavaScript -->
+                </div>
+            </div>
+
+            <div class="carousel-controls">
+                <button class="carousel-btn prev-btn" id="prevBtn">&#8249;</button>
+                <button class="carousel-btn next-btn" id="nextBtn">&#8250;</button>
+            </div>
+
+            <div class="carousel-description">
+                <p id="carouselDesc">AI 프로젝트 생성량 비교 - 모든 AI 분야에서 2023년 이후 압도적 증가</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Questions Section -->
+    <section class="research-section">
+        <h2>연구 질문</h2>
+        <div class="research-questions">
+            <div class="question-card">
+                <h3>RQ1</h3>
+                <p>ChatGPT 출시 전후(2021-2022 vs 2023-2025) GitHub AI 프로젝트는 어떻게 변화했는가?</p>
+            </div>
+            <div class="question-card">
+                <h3>RQ2</h3>
+                <p>GitHub 레포지토리가 2023년 이후 실제로 증가했는가?</p>
+            </div>
+            <div class="question-card">
+                <h3>RQ3</h3>
+                <p>AI 분야별(LLM, 강화학습, 컴퓨터비전, NLP) 프로젝트 증가 양상이 다른가?</p>
+            </div>
+            <div class="question-card">
+                <h3>RQ4</h3>
+                <p>Stack Overflow 질문 수와 GitHub 프로젝트 수 간 상관관계가 있는가?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Downloads Section -->
+    <section class="downloads-section">
+        <h2>Downloads & Resources</h2>
+        <div class="download-links">
+            <a href="Dataset/github_all_years_cleaned.csv" class="download-item" download>
+                <span class="download-icon">📊</span>
+                <span class="download-text">GitHub Dataset (CSV)</span>
+            </a>
+            <a href="Dataset/stackoverflow_all_years_cleaned.csv" class="download-item" download>
+                <span class="download-icon">📊</span>
+                <span class="download-text">Stack Overflow Dataset (CSV)</span>
+            </a>
+            <a href="pdf/PPT.pdf" class="download-item" download>
+                <span class="download-icon">📄</span>
+                <span class="download-text">Presentation (PDF)</span>
+            </a>    
+        </div>
+    </section>
+
+    <!-- Citation Section -->
+    <section class="citation-section">
+        <h2>Citation</h2>
+        <div class="citation-box">
+            <pre><code>git clone https://github.com/TeamCountingStars/dataAnalysis.git
+cd dataAnalysis</code></pre>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="contact-section">
+        <h2>Contact</h2>
+        <p>For questions or collaboration opportunities, please contact:</p>
+        <p><strong>윤태웅</strong> - <a href="mailto:taewoong25@hanyang.ac.kr">taewoong25@hanyang.ac.kr</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
