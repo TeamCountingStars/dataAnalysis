@@ -4,124 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChatGPT와 Vibe Coding 이후, 개발자 생태계는 어떻게 변했는가?</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="base.css">
 </head>
 <body>
-    <!-- Header with logos -->
-    <header class="header">
-        <div class="logo-container">
-            <img src="images/logo.png" alt="Logo 1" class="logo">
-            <img src="images/logo2.png" alt="Logo 2" class="logo">
-            <img src="images/logo3.png" alt="Logo 3" class="logo">
+    <div class="container">
+        <!-- Logos -->
+        <div class="logos">
+            <img src="images/logo2.png" alt="로고">
+            <img src="images/logo.png" alt="한양대학교 ERICA">
+            <img src="images/logo3.png" alt="로고">
         </div>
-    </header>
 
-    <!-- Title Section -->
-    <section class="title-section">
-        <h1 class="main-title">ChatGPT와 Vibe Coding 이후, 개발자 생태계는 어떻게 변했는가?</h1>
-        <div class="authors">
-            <span class="author">윤태웅</span>
-            <span class="author">원준서</span>
-            <span class="author">송민찬</span>
-            <span class="author">이라온</span>
+        <!-- Title -->
+        <div class="title-section">
+            <h1>ChatGPT와 Vibe Coding 이후,<br>개발자 생태계는 어떻게 변했는가?</h1>
+            <div class="subtitle">GitHub · Stack Overflow 데이터 기반 AI 개발 생태계 변화 분석</div>
+            <div class="authors">윤태웅 · 원준서 · 송민찬 · 이라온</div>
+            <div class="affiliation">한양대학교 ERICA 스마트융합공학부 스마트ICT융합전공<br>데이터 분석 · 팀 프로젝트</div>
+            <div class="badges">
+                <span class="badge">Python</span>
+                <span class="badge">Pandas</span>
+                <span class="badge">Prophet</span>
+                <span class="badge">데이터 분석</span>
+                <span class="badge">팀 프로젝트</span>
+            </div>
         </div>
-        <div class="affiliation">
-            한양대학교 ERICA 스마트융합공학부 스마트ICT융합전공
+
+        <!-- Abstract -->
+        <div class="section">
+            <h2>Abstract</h2>
+            <p class="abstract">
+                2022년 11월 ChatGPT 출시 이후 소프트웨어 개발 시장이 급격히 변화했습니다. 본 연구는 AI 코드
+                생성 도구가 개발 시장에 미친 영향을 GitHub와 Stack Overflow 데이터로 분석합니다. GitHub
+                프로젝트 생성량, 언어별 사용 추세, AI 분야별 성장 패턴을 정량적으로 측정하고, Stack Overflow
+                질문 수와의 상관관계를 통해 개발자 커뮤니티의 행동 변화를 파악합니다. 시계열 분석과 Prophet
+                예측 모델을 활용하여 ChatGPT 출시가 촉발한 패러다임 전환을 입증하고, 개발 환경의 미래를
+                전망합니다.
+            </p>
         </div>
-    </section>
 
-    <!-- Abstract Section -->
-    <section class="abstract-section">
-        <h2>Abstract</h2>
-        <p>
-            2022년 11월 ChatGPT 출시 이후 소프트웨어 개발 시장이 급격히 변화했습니다.
-            본 연구는 AI 코드 생성 도구가 개발 시장에 미친 영향을 GitHub와 Stack Overflow 데이터로 분석합니다.
-            GitHub 프로젝트 생성량, 언어별 사용 추세, AI 분야별 성장 패턴을 정량적으로 측정하고,
-            Stack Overflow 질문 수와의 상관관계를 통해 개발자 커뮤니티의 행동 변화를 파악합니다.
-            시계열 분석과 Prophet 예측 모델을 활용하여 ChatGPT 출시가 촉발한 패러다임 전환을 입증하고,
-            개발 환경의 미래를 전망합니다.
-        </p>
-    </section>
+        <!-- Research Questions -->
+        <div class="section">
+            <h2>연구 질문</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>RQ</th><th>질문</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>RQ1</td><td>ChatGPT 출시 전후(2021–2022 vs 2023–2025) GitHub AI 프로젝트는 어떻게 변화했는가?</td></tr>
+                        <tr><td>RQ2</td><td>GitHub 레포지토리가 2023년 이후 실제로 증가했는가?</td></tr>
+                        <tr><td>RQ3</td><td>AI 분야별(LLM·강화학습·컴퓨터비전·NLP) 프로젝트 증가 양상이 다른가?</td></tr>
+                        <tr><td>RQ4</td><td>Stack Overflow 질문 수와 GitHub 프로젝트 수 간 상관관계가 있는가?</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-    <!-- 3D Carousel Section -->
-    <section class="carousel-section">
-        <h2>연구 결과 시각화</h2>
-        <div class="carousel-container">
-            <div class="scene">
-                <div class="carousel" id="carousel">
-                    <!-- Images will be added dynamically by JavaScript -->
+        <!-- Results -->
+        <div class="section">
+            <h2>연구 결과 시각화</h2>
+            <p class="section-desc">데이터 분석 결과입니다.</p>
+            <div class="shot-grid two-col">
+                <div class="shot-item">
+                    <img src="resultsImage/image.png" alt="AI 프로젝트 생성량 비교">
+                    <div class="shot-caption">AI 프로젝트 생성량 — 2023년 이후 전 분야 급증, LLM 25만 건 이상 급부상</div>
+                </div>
+                <div class="shot-item">
+                    <img src="resultsImage/image-2.png" alt="언어별 프로젝트 수">
+                    <div class="shot-caption">언어별 프로젝트 수 — Python·Jupyter 1·2위, JS·TS 급증</div>
+                </div>
+                <div class="shot-item">
+                    <img src="resultsImage/image-3.png" alt="언어별 트렌드">
+                    <div class="shot-caption">언어별 트렌드 — 2023년 중반 Python이 Jupyter 추월 (연구→앱 개발)</div>
+                </div>
+                <div class="shot-item">
+                    <img src="resultsImage/image-6.png" alt="분야별 성장 추이">
+                    <div class="shot-caption">분야별 성장 추이(Log) — LLM 2023년 초부터 수직 상승</div>
+                </div>
+                <div class="shot-item">
+                    <img src="resultsImage/image-7.png" alt="LLM 시계열 분해">
+                    <div class="shot-caption">LLM 시계열 분해 — 강한 우상향 추세 + 연간 주기 패턴</div>
+                </div>
+                <div class="shot-item">
+                    <img src="resultsImage/image-9.png" alt="Prophet 예측 모델">
+                    <div class="shot-caption">Prophet 예측 — ChatGPT·Auto-GPT 이벤트 분리 학습</div>
+                </div>
+                <div class="shot-item">
+                    <img src="resultsImage/image-10.png" alt="Prophet 분해 분석">
+                    <div class="shot-caption">Prophet 분해 — 이벤트 제거 후 순수 12개월 주기 확인</div>
+                </div>
+                <div class="shot-item">
+                    <img src="resultsImage/image-11.png" alt="분야별 상관관계">
+                    <div class="shot-caption">분야별 상관관계 — GitHub 증가 시 Stack Overflow 질문 감소 (음의 상관)</div>
+                </div>
+                <div class="shot-item">
+                    <img src="resultsImage/image-12.png" alt="언어별 상관관계">
+                    <div class="shot-caption">언어별 상관관계 — 주요 언어 음의 상관, MATLAB만 예외적 양의 상관</div>
                 </div>
             </div>
+        </div>
 
-            <div class="carousel-controls">
-                <button class="carousel-btn prev-btn" id="prevBtn">&#8249;</button>
-                <button class="carousel-btn next-btn" id="nextBtn">&#8250;</button>
-            </div>
+        <!-- Key Findings -->
+        <div class="section">
+            <h2>Key Findings</h2>
+            <ul class="bullets">
+                <li><strong>LLM 분야 급부상</strong> · ChatGPT 이후 25만 건 이상으로 폭증, 새 주류 카테고리 형성</li>
+                <li><strong>개발 패러다임 전환</strong> · 2023년 중반 Python이 Jupyter Notebook 추월 (연구→애플리케이션)</li>
+                <li><strong>Stack Overflow 역상관</strong> · GitHub 프로젝트 증가 시 질문 감소 (상관계수 -0.70)</li>
+                <li><strong>Prophet 예측</strong> · 장기 추세·계절성 분리, ChatGPT/Auto-GPT 이벤트 효과 정량화</li>
+            </ul>
+        </div>
 
-            <div class="carousel-description">
-                <p id="carouselDesc">AI 프로젝트 생성량 비교 - 모든 AI 분야에서 2023년 이후 압도적 증가</p>
+        <!-- Team -->
+        <div class="section">
+            <h2>Team</h2>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr><th>이름</th><th>역할</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>윤태웅</td><td>PM</td></tr>
+                        <tr><td>원준서</td><td>데이터 분석 및 시각화</td></tr>
+                        <tr><td>송민찬</td><td>GitHub 데이터 수집</td></tr>
+                        <tr><td>이라온</td><td>Stack Overflow 데이터 수집</td></tr>
+                    </tbody>
+                </table>
             </div>
         </div>
-    </section>
 
-    <!-- Research Questions Section -->
-    <section class="research-section">
-        <h2>연구 질문</h2>
-        <div class="research-questions">
-            <div class="question-card">
-                <h3>RQ1</h3>
-                <p>ChatGPT 출시 전후(2021-2022 vs 2023-2025) GitHub AI 프로젝트는 어떻게 변화했는가?</p>
-            </div>
-            <div class="question-card">
-                <h3>RQ2</h3>
-                <p>GitHub 레포지토리가 2023년 이후 실제로 증가했는가?</p>
-            </div>
-            <div class="question-card">
-                <h3>RQ3</h3>
-                <p>AI 분야별(LLM, 강화학습, 컴퓨터비전, NLP) 프로젝트 증가 양상이 다른가?</p>
-            </div>
-            <div class="question-card">
-                <h3>RQ4</h3>
-                <p>Stack Overflow 질문 수와 GitHub 프로젝트 수 간 상관관계가 있는가?</p>
+        <!-- Resources -->
+        <div class="section">
+            <h2>Downloads &amp; Resources</h2>
+            <div class="resources">
+                <a href="Dataset/github_all_years_cleaned.csv" class="resource-link" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/></svg>
+                    <span>GitHub Dataset (CSV)</span>
+                </a>
+                <a href="Dataset/stackoverflow_all_years_cleaned.csv" class="resource-link" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/></svg>
+                    <span>Stack Overflow Dataset (CSV)</span>
+                </a>
+                <a href="pdf/PPT.pdf" class="resource-link" download>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z"/></svg>
+                    <span>Presentation (PDF)</span>
+                </a>
+                <a href="https://github.com/TeamCountingStars/dataAnalysis" class="resource-link" target="_blank" rel="noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/></svg>
+                    <span>GitHub</span>
+                </a>
             </div>
         </div>
-    </section>
 
-    <!-- Downloads Section -->
-    <section class="downloads-section">
-        <h2>Downloads & Resources</h2>
-        <div class="download-links">
-            <a href="Dataset/github_all_years_cleaned.csv" class="download-item" download>
-                <span class="download-icon">📊</span>
-                <span class="download-text">GitHub Dataset (CSV)</span>
-            </a>
-            <a href="Dataset/stackoverflow_all_years_cleaned.csv" class="download-item" download>
-                <span class="download-icon">📊</span>
-                <span class="download-text">Stack Overflow Dataset (CSV)</span>
-            </a>
-            <a href="pdf/PPT.pdf" class="download-item" download>
-                <span class="download-icon">📄</span>
-                <span class="download-text">Presentation (PDF)</span>
-            </a>    
+        <!-- Contact -->
+        <div class="contact">
+            <h2>Contact</h2>
+            <p>문의사항은 아래 이메일로 연락주시기 바랍니다.</p>
+            <a href="mailto:taewoong25@hanyang.ac.kr">윤태웅 · taewoong25@hanyang.ac.kr</a>
         </div>
-    </section>
-
-    <!-- Citation Section -->
-    <section class="citation-section">
-        <h2>Citation</h2>
-        <div class="citation-box">
-            <pre><code>git clone https://github.com/TeamCountingStars/dataAnalysis.git
-cd dataAnalysis</code></pre>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <footer class="contact-section">
-        <h2>Contact</h2>
-        <p>For questions or collaboration opportunities, please contact:</p>
-        <p><strong>윤태웅</strong> - <a href="mailto:taewoong25@hanyang.ac.kr">taewoong25@hanyang.ac.kr</a></p>
-    </footer>
-
-    <script src="script.js"></script>
+    </div>
 </body>
 </html>
